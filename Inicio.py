@@ -11,6 +11,17 @@ st.set_page_config(
     layout="centered"
 )
 
+st.markdown(
+    """
+    <style>
+    .stApp {
+        background-color: #FFB6C1; /* magenta claro */
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
 # Variables de estado
 if 'sensor_data' not in st.session_state:
     st.session_state.sensor_data = None
